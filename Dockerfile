@@ -9,4 +9,6 @@ ADD requirements.txt main.py /workspace/
 
 RUN pip install -r /workspace/requirements.txt
 
-CMD ["python", "/workspace/main.py"]
+EXPOSE ${GRADIO_SERVER_PORT}
+
+CMD ["python3", "/workspace/main.py"]
