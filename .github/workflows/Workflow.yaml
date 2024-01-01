@@ -1,0 +1,17 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use Docker login secret
+        run: echo "${{ secrets.DOCKER_USERNAME }}"
