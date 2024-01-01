@@ -4,3 +4,4 @@ scipy==1.11.4
 scikit-image==0.22.0
 huggingface-hub==0.20.1
 pydantic==2.5.3
+whisper==1.0
